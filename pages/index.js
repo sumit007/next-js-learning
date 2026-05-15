@@ -18,7 +18,7 @@ export default function Home() {
         </h1>
 
         <p className="description">
-          Try the{' '}
+          Try the My first {' '}
           <Link href="/calculator" className="inline-link">
             Calculator
           </Link>{' '}
