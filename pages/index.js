@@ -12,10 +12,18 @@ export default function Home() {
       <main>
         <h1 className="title">
           Read {' '} 
-          <Link href='/posts/first-post'>
-            <a>My First Blog</a>
+          <Link href="/posts/first-post" className="inline-link">
+            My First Blog
           </Link>
         </h1>
+
+        <p className="description">
+          Try the{' '}
+          <Link href="/calculator" className="inline-link">
+            Calculator
+          </Link>{' '}
+          demo
+        </p>
 
         <p className="description">
           Get started by editing <code>pages/index.js</code>
@@ -106,14 +114,14 @@ export default function Home() {
           text-decoration: none;
         }
 
-        .title a {
+        .inline-link {
           color: #0070f3;
           text-decoration: none;
         }
 
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
+        .inline-link:hover,
+        .inline-link:focus,
+        .inline-link:active {
           text-decoration: underline;
         }
 
